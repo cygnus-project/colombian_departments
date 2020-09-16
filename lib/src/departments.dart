@@ -1,3 +1,6 @@
+import '../colombian_departments.dart';
+import '../colombian_departments.dart';
+
 enum Departments{
   antioquia,
   atlantico,
@@ -34,8 +37,8 @@ enum Departments{
   vichada
 }
 
-extension Departments_Extension on Departments{
-  String get name {
+extension Departments_Names on Departments{
+  String get value {
     switch(this){
       case Departments.antioquia:
         return 'Antioquia';
@@ -109,3 +112,4 @@ extension Departments_Extension on Departments{
 
   }
 }
+
